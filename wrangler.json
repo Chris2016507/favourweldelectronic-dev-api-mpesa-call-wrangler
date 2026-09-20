@@ -13,3 +13,23 @@
 		"not_found_handling": "single-page-application"
 	}
 }
+name = "favourweld-daraja"
+main = "src/index.js"
+compatibility_date = "2026-09-18"
+
+[assets]
+directory = "./public"
+binding = "ASSETS"
+
+[vars]
+MPESA_BASE_URL = "https://sandbox.safaricom.co.ke"
+MPESA_SHORTCODE = "8004897"
+MPESA_TRANSACTION_TYPE = "CustomerBuyGoodsOnline"
+
+[secrets]
+required = [
+  "MPESA_CONSUMER_KEY"b2lSLmNqDm84kNZBioA1YsRI3yflkXEeuyMe5fBTc8oaccp6,
+  "MPESA_CONSUMER_SECRET"dBHQgFX4B8lxGF14ixYt11A5rQehfBx7bKz7MLdgDG9NXL3gwh2uK5VGn4rf6b2F,
+  "MPESA_PASSKEY",
+  "MPESA_CALLBACK_URLhttps://sandbox.safaricom.co.ke/v1/ussdpush/get-msisdn"
+]
